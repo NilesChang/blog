@@ -1,0 +1,128 @@
+<html> 
+	<head>
+		<title>Feedback</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<form action="" method="post">
+			<fieldset>
+				<legend>
+					新用户注册（必填）：
+				</legend>
+				<p>
+				<label>
+					用户名：&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="text" name="username" size="30" maxlength="100">
+				</label>
+				</p>
+				<p>
+				<label>
+					设定密码：
+					<input type="password" name="password" size="30" maxlength="100">
+				</label>
+				</p>
+				<p>
+				<label>
+					再次确认：
+					<input type="password" name="password" size="30" maxlength="100">
+				</label>
+				</p>
+			</fieldset>
+			<hr />
+			 <fieldset>
+			 	<legend>
+			 		您的基本信息：
+			 	</legend>
+			 	<br />
+			 	<label>
+			 		姓名：
+			 		<input type="text" name="value" size="30" maxlength="100">
+			 	</label>
+			 	<p>
+			 		上传您的头像或照片：
+			 	<input type="file" name="photo">
+			 	</p>
+			 	<p>
+			 		您是：
+				 	<label>
+			 		<input type="radio" name="jiebie" value="old" />
+			 		到期村官
+				 	</label>
+				 	<label>
+			 		<input type="radio" name="jiebie" value="new" />
+			 		在职村官
+				 	</label>
+                </p>
+                <p>
+			 	<label for="area">
+			 		所在区：
+			 	</label>
+			 	<select name="aname" id="area" >
+                   <option value=”qyh“>通州区</option>
+                   <option value=”hyh“>海淀区</option>
+                   <option value=”xda“>房山区</option>
+                   <option value=”md“>顺义区</option>
+			 	</select>
+			 	<label for="town">
+			 		&nbsp;&nbsp;所在镇：
+			 	</label>
+			 	<select name="tname" id="town" >
+                   <option value=”qyh“>漷县镇</option>
+                   <option value=”hyh“>梨园镇</option>
+                   <option value=”xda“>西集镇</option>
+			 	</select>
+			 	<label for="village">
+			 		&nbsp;&nbsp;所在村：
+			 	</label>
+			 	<select name="vname" id="village" >
+                   <option value=”qyh“>前元化</option>
+                   <option value=”hyh“>后元化</option>
+                   <option value=”xda“>西定安</option>
+                   <option value=”md“>马堤</option>
+			 	</select>
+			 	</p>
+			 	<p>
+			 	<label>
+			 		入职日期：
+			 		<input type="date" name="workbegin" />
+			 	</label>
+				</p>
+				<p>
+			 	<label for="village">
+			 		职务：
+			 	</label>
+			 	
+			 	<label>
+			 		<input type="checkbox" name="jobs" checked="checked" />
+			 		书记助理
+			 	</label>
+			 	<label>
+			 		<input type="checkbox" name="jobs" />
+			 		主任助理
+			 	</label>
+			 	<label>
+			 		<input type="checkbox" name="jobs" />
+			 		全职助理
+			 	</label>
+			 	</p>
+			 	<label>
+			 		E-mail:
+			 		<input type="email" size="30" maxlength="100">
+			 	</label>
+			 	<br />
+			 	<p>
+			 		<label for="brief_intro">
+			 			描述自己：
+			 		</label>
+			 		<br />
+			 		<textarea rows="4" cols="40" id="brief_intro">
+			 		</textarea>
+			 	</p>
+			 </fieldset>
+			 <br />
+			 	<button>取消</button>
+			 	<input type="submit" value="注册"/>
+			 
+		</form>
+	</body>
+</html>
