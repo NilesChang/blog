@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="about" />
+		<title>中英对照版</title>
+		<link href="../../css/styles.css" type="text/css" rel="stylesheet" />
+<!-- 		<link href="../../css/article.css" type="text/css" rel="stylesheet" /> -->
+	</head>
+	<body>
+		<div id="page">			
+<!-- 导航条 -->
+			<ul id="main_nav">
+				<li class="nav"><a href="../index.html">Home</a></li>
+				<li class="nav"><a href="../archives/index.html">Archives</a></li>
+				<li class="nav"><a href="index.html" class="on">Works</a></li>
+				<li class="nav"><a href="about.html" id="coming-soon">Tags</a></li>
+				<li class="nav"><a href="../about.html">About</a></li>
+			</ul>			
+			<div id="header">
+				<h2 id="book"><cite>The Confession</cite></h2>
+			</div>
+<!-- 	通过selector可以选择		 -->
+				<form  id="selector" action="">
+<!-- 				学习了交互之后action -->
+					<p>请选择：</p>
+					 <!-- name指定表单控件的名称 -->
+					<select name="chapters">
+						<option value="01">缘起</option>
+						<option value="02" selected>第一章</option>
+						<option value="03">第二章</option>
+						<option value="04">第三章</option>
+					</select>
+					&nbsp;&nbsp;
+					<input type="radio" name="genre" value="chs_eng" checked/>中英对照版
+					<input type="radio" name="genre" value="eng"/>英文版
+					<input type="radio" name="genre" value="chs"/>中文版
+				</form>
+
+<!-- 该页正文段落，此处为表格 三列，相同格式的值使用class属性 -->
+			<table>
+<!-- 表头部分 -->
+				<tr>
+					<th>Photo</th>
+					<th>English</th>
+					<th>中文版</th>
+				</tr>
+<!-- 第一行，注意跨行图片 -->
+				<tr>
+					<td rowspan="2">
+						<figure><img src="../../images/outrage.jpg" alt="Outrage"/><br/>
+							<figcaption>纪录片：<cite>Outrage</cite></figcaption>
+						</figure>
+					</td>
+					<td class="src_content">
+						In the months of introspection and counseling I've had since leaving the public sphere, I've 
+						learned that all my life I have suffered three distinct shames.The first is something that the psychotherapist Pia Mellody calls "carried shame", an inherited burden from which everyone suffers in one form or another—like the concept of original sin, I suppose. In my case,what I was carring was the burden of society's and the Church's disapprobation of my core self. Gay people are especially susceptible to this,Mellody says, but it's extremely common among people in general."You are less than,"she explained to me."You grow up convinced you are not worth anything because of this core truth about yourself."
+					</td>
+					<td class="tra_content">					
+						<p id="translation">退出公众视野后，我进行了几个月的自省和心理咨询，认识到自己生命里承受了三种确切的耻辱。第一种，心理专家派·麦乐迪称之为“生来带有的羞耻”，每个人都在这样那样地承受着通过遗传而来的心理重担，我想有点像是原罪的概念。就我而言，真实的自己不被社会和基督教认可，这是我背负的重担。麦乐迪说，同性恋特别容易遭受这种痛苦，但通常而言，类似的羞耻感在人群中非常普遍。她跟我解释说，“你还远远不够”。“由于这个涉及到自身的关键真相，你长大后觉得自己一文不值”。
+						</p>
+					</td>	
+				</tr>
+<!-- 第二行 -->
+				<tr>
+					<td class="src_content">						
+						Carried shame is a bad thing in itself, but Mellody believes that in some people it can create an acute childhood trauma. The symptoms of this are many, including emotional immaturity, an inability to achieve intimacy, a dogged feeling of unworthiness , and a spiritual freefall—descriptions of my like to a tee.
+					</td>
+					<td class="tra_content">						
+						<p id="translation">携带的羞耻感本身就不好，麦乐迪认为在一些人身上它可能会造成严重的童年创伤，其症状表现为很多种，包括情感上的不成熟，无力营造亲密关系（爱无能），持续的无价值感，精神低落——完全是在描述我。
+						</p>
+					</td>
+				</tr>				
+			</table>
+			
+							
+<!-- 表格结束 -->
+		<p class="credits">posted by niles chang</p>		
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+

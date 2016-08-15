@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="about" />
+		<title>中英对照版</title>
+		<link href="../../css/styles.css" type="text/css" rel="stylesheet" />
+<!-- 		<link href="../../css/article.css" type="text/css" rel="stylesheet" /> -->
+	</head>
+	<body>
+		<div id="page">			
+<!-- 导航条 -->
+			<ul id="main_nav">
+				<li class="nav"><a href="../index.html">Home</a></li>
+				<li class="nav"><a href="../../archives/index.html">Archives</a></li>
+				<li class="nav"><a href="index.html" class="on">Works</a></li>
+				<li class="nav"><a href="about.html" id="coming-soon">Tags</a></li>
+				<li class="nav"><a href="../about.html">About</a></li>
+			</ul>			
+			<div id="header">
+				<h2 id="book"><cite>The Confession</cite></h2>
+			</div>
+<!-- 	通过selector可以选择		 -->
+				<form  id="selector" action="">
+<!-- 				学习了交互之后action -->
+					<p>请选择：</p>
+					 <!-- name指定表单控件的名称 -->
+					<select name="chapters">
+						<option value="01">缘起</option>
+						<option value="02" selected>第一章</option>
+						<option value="03">第二章</option>
+						<option value="04">第三章</option>
+					</select>
+					&nbsp;&nbsp;
+					<input type="radio" name="genre" value="chs_eng" checked/>中英对照版
+					<input type="radio" name="genre" value="eng"/>英文版
+					<input type="radio" name="genre" value="chs"/>中文版
+				</form>
+
+<!-- 该页正文段落，此处为表格 三列，相同格式的值使用class属性 -->
+			<table>
+<!-- 表头部分 -->
+				<tr>
+					<th>Photo</th>
+					<th>English</th>
+					<th>中文版</th>
+				</tr>
+
+<!-- 第三行 -->
+				<tr>
+					<td rowspan="2">
+						<figure>
+							<img src="../../images/TheConfession.jpg" alt="The bookcover of The confession"/><br/>
+							<figcaption>Book：<cite>The Confession</cite></figcaption>
+						</figure>					
+					</td>
+					<td class="src_content">
+						My second shame concerned inauthenticity—a term that describes what happens when you're dishonest about who you really are. In theory or practice ,nobody was more duplicitous than I. Through most of my adult life there was not one person who knew who I really was, and the longer I went without amending that dishonesty, the more ashamed I felt.
+					</td>
+					<td class="tra_content">					
+						<p id="translation">我的第二种羞耻感与“不真实”有关，这个词描述了当你对做真实的自己不诚实时会发生的事。按理说，或实际上，没有人比我更不诚实。我的成年生活里，没有一个人了解真正的我，不对这种不诚实做任何修正，我过得越久，就越感到羞耻。
+						</p>
+					</td>	
+				</tr>
+<!-- 第四行 -->
+				<tr>
+					<td class="src_content">	
+					A third shame, for me, concerned my behavior. From the time in high school when I made up my mind to behave in public as though I were straight, I nonetheless carried on sexually with men.Scores of men.
+					</td>
+					<td class="tra_content">					
+						<p id="translation">第三种羞耻涉及到我的行为。从高中开始，我便下定决心在公众面前表现得自己像是直的，尽管如此，我还是和男人发生性关系，许多男人。
+						</p>
+					</td>			
+				</tr>
+			</table>				
+<!-- 表格结束 -->
+		<p class="credits">posted by niles chang</p>		
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
