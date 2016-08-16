@@ -8,9 +8,19 @@
 ####页面上的区块可以占据网格中的1、2、3、4直到12个列，使用的类名有grid_3,grid_4等，一直到grid_12。这些列都向左浮动，并且每个列左右两侧各有10像素的外边距。    
     
 #### 网上还有一些基于网格的css框架(补充学习中):
+#### blueprint:
+<http://blueprintcsss.org>    
+![blueprint](blueprint.png)
 
-<http://blueprintcsss.org>  
+#### 还有这位芬兰的程序员哥哥开发的框架
+先放照片：
+  
+![finland](ggs.png)  
+网址链接：
+<http://www.jonikorpi.com/grid-systems>    
+![ggs](gs4.png)
+#### YUI
 
-<http://lessframework.com>  
+<http://yuilibrary.com/>  
 
-<http://developer.yahoo.com/yui/grids/>
+![yui](yui.png)
