@@ -6,26 +6,77 @@
     <meta content="提供图书、电影、音乐唱片的推荐、评论和价格比较，以及城市独特的文化生活。" name="description"/>
   </head>
   <body>
-    <!--顶部导航-->
+    <!--全局顶部导航-->
       <div id="db-global-nav" class="global-nav">
-          <!--  -->
-          <div>
-              <div class="top-nav-info">
-                <ul>
-                    <li><a id="" href="#">豆邮</a></li>
-                    <li><a target="_blank" href="#"><span>NilesChang 的账号</span><span></span><!--下箭头效果--></a>
-                        <div><!--单击时出现的个人信息列表-->
-                            <table cellpadding="0" cellspacing="0">
-                                <tr><td><a href="#">个人主页</a></td></tr>
-                                <tr><td><a target="_blank" href="#">我的订单</a></td></tr>
-                                <tr><td><a target="_blank" href="#">我的钱包</a></td></tr>
-                                <tr><td><a target=“_blank” href="#">账号管理</a></td></tr>
-                                <tr><td><a href="#">退出</a></td></tr>
-                            </table>
+          <div class="bd">
+                  <div class="top-nav-info">
+                    <ul>
+                        <li><a id="" href="#">豆邮</a></li>
+                        <li><a target="_blank" href="#"><span>NilesChang 的账号</span><span></span><!--下箭头效果--></a>
+                            <div class="more-items"><!--单击时出现的个人信息列表-->
+                                <table cellpadding="0" cellspacing="0">
+                                    <tr><td><a href="#">个人主页</a></td></tr>
+                                    <tr><td><a target="_blank" href="#">我的订单</a></td></tr>
+                                    <tr><td><a target="_blank" href="#">我的钱包</a></td></tr>
+                                    <tr><td><a target=“_blank” href="#">账号管理</a></td></tr>
+                                    <tr><td><a href="#">退出</a></td></tr>
+                                </table>
+                            </div>
+                        </li>
+                    </ul>
+                  </div><!--End of top-nav-info-->
+
+                  <div class="top-nav-reminder">
+                     <a href="#" class="">提醒</a>
+                     <div id="top-nav-notimenu" class="more-items">
+                        <div class="bd">
+                          <p>加载中...</p>
                         </div>
-                    </li>
-                </ul>
-              </div><!--End of top-nav-info-->
-      </div>
+                     </div>
+                  </div><!--End of top-nav-reminder-->
+
+                  <div class="top-nav-doubanapp">
+                      <a href="https://www.douban.com/" class="lnk-doubanapp">下载豆瓣客户端</a>
+                      <div id="top-nav-appintro" class="more-items">
+                          <p class="appintro-title">豆瓣</p>
+                          <p class="slogan">我们的精神角落</p>
+                          <p class="qrcode">扫码直接下载</p>
+                          <div class="download">
+                              <a href="#">iPhone</a>
+                              <span>•</span>
+                              <a href="#">Android</a>
+                          </div>
+                      </div>
+                      <div id="doubanapp-tip">
+                          <a href="#" class="tip-link">豆瓣4.0全新发布</a>
+                          <!--关闭提示-->
+                      </div>
+                  </div><!--End of top-nav-doubanapp-->
+
+                <div class="global-nav-items">
+                    <ul>
+                      <li  class="on"><a href="#">豆瓣</a></li>
+                      <li  class=""><a href="#" target="_blank">读书</a></li>
+                      <li  class=""><a href="#" target="_blank">电影</a></li>
+                      <li  class=""><a href="#" target="_blank">音乐</a></li>
+                      <li  class=""><a href="#" target="_blank">同城</a></li>
+                      <li  class=""><a href="#" target="_blank">小组</a></li>
+                      <li  class=""><a href="#" target="_blank">FM</a></li>
+                      <li  class=""><a href="#" target="_blank">东西</a></li>
+                      <li  class=""><a href="#" target="_blank">市集</a></li>
+                      <li><a href="#more" class="bn-more"><span>更多</span></a>
+                        <div class="more-items">
+                          <table cellpadding="0" cellspacing="0">
+                            <tr><td><a href="https://moment.douban.com" target="_blank">一刻</a></td></tr>
+                            <tr><td><a href="https://ypy.douban.com" target="_blank">一拍一</a></td></tr>
+                          </table>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+          </div><!--End of bd-->
+      </div><!--End of 顶部导航-->
+
+      <!--主页导航-->
   </body>
 </html>
