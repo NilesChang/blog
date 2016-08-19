@@ -8,7 +8,7 @@
   </head>
   <body>
     <!--全局顶部导航-->
-      <div id="db-global-nav" class="global-nav">
+      <header id="db-global-nav" class="global-nav">
           <div class="bd">
                 <div class="top-nav-info">
                     <ul>
@@ -76,9 +76,9 @@
                     </ul>
                 </div>
           </div><!--End of bd-->
-      </div><!--End of 顶部导航-->
+      </header><!--End of 顶部导航-->
       <!--主页导航-->
-      <div id="db-nav-sns" class="nav">
+      <nav id="db-nav-sns">
               <div class="nav-wrap">
                 <div class="nav-primary">
 
@@ -121,12 +121,13 @@
                       </div>
                 </div>
               </div>
-      </div><!--End of 主页导航-->
+      </nav><!--End of 主页导航-->
       <!-- 正文 -->
       <div id="wrapper">
         <div id="content">
+
           <div class="grid-16-8 clearfix">
-            <div class="article">
+            <article>
 
               <div class="statuses-setting">
                           <div class="hd">
@@ -138,7 +139,7 @@
                           </div>
                           <p class="setting-tips" style="display:none;">
                             设置成功! 相关内容后继会出现在你的首页上</p> -->
-              </div>
+              </div><!--End of 状态设置-->
                 <!-- script语句-->
               <div id="statuses">
                     <div id="db-isay" class="">
@@ -178,80 +179,271 @@
                         </form>
                         <!-- 其他功能 -->
                       </div>
-
+                    <!-- 静态展示 -->
                     <div class="stream-items">
-                      <!-- 静态展示 -->
+                          <!-- 第一个数据 是谁的？来自我的关注人 他写了一篇书评文章-->
+                          <div class="status-item" data-sid="1875447427" data-action="7" data-target-type="book" data-object-kind="1012"
+                                data-object-id="8037792">
+                                <div class="mod" data-status-id="1875447427">
+                                  <!-- 这次干了什么-->
+                                  <div class="hd">
+                                    <div class="usr-pic">
+                                      <a href="#" title="齐导"><img src="https://img3.doubanio.com/icon/u103141034-3.jpg" alt="齐飞"/></a>
+                                    </div>
+                                    <div class="text">
+                                      <a href="https://www.douban.com/people/103141034/" class="lnk-people">迪迪</a>
+                                      写了
+                                      <a class="lnk-subject" href="https://book.douban.com/subject/26838695/" target="_self">12个工作的基本</a> 的书评:
+                                    </div>
+                                  </div>
+                                  <!-- 简介 -->
+                                  <div class="bd">
+                                    <div class="block note-block">
+                                      <div class="pic">
+                                        <div class="pic-wrap">
+                                            <a href="https://book.douban.com/review/8037792/" target="_blank"><img src="https://img3.doubanio.com/view/thing_review/large/public/p251095.jpg"></a>
+                                            <span class="valign"></span>
+                                          </div>
+                                        </div>
 
-                      <div class="status-item"
-                            data-sid="1875447427"
-                            data-action="7"
-                            data-target-type="book"
-                            data-object-kind="1012"
-                            data-object-id="8037792">
-                      <!-- 第一个数据 -->
-                      <div class="mod" data-status-id="1875447427">
-                        <!-- 谁 干了什么-->
-                        <div class="hd">
-                          <div class="usr-pic">
-                            <a href="#" title="齐导"><img src="https://img3.doubanio.com/icon/u103141034-3.jpg" alt="齐飞"/></a>
+                                       <div class="content">
+                                         <div class="title">
+                                            <a href="https://book.douban.com/review/8037792/">想永远月薪3000，只要远离这12种能力！</a>
+                                          </div>
+                                          <p>为什么进入职场，3年，5年，10年以后混的不一样呢？有些人offer拿到手软，而有些人却还在苦逼的投简历与一群刚毕业的大学生竞争底层岗位呢？ 这中间的差距差在哪里呢？《12个工作基本》这本书认为，在职场上你需要具备这12种基本能力...</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- 发表时间 由谁分享 -->
+                                  <div class="actions">
+                                    <span class="created_at" title="2016-08-11 07:23:41">
+                                        <a href="https://www.douban.com/people/103141034/status/1875447427/">8月11日</a>
+                                      </span>
+                                    <a href="https://www.douban.com/people/103141034/status/1875447427/" class="btn btn-action-reply">回应</a>
+                                      &nbsp;&nbsp;<a href="https://www.douban.com/people/103141034/status/1875447427/" class="btn btn-key-like  btn-like">赞</a>
+                                      <span class="count like-count">(1)</span>
+                                      &nbsp;&nbsp;<a href="https://www.douban.com/people/103141034/status/1875447427/" class="btn btn-key-reshare btn-reshare">转播</a>
+                                      <span class="reshared_by">由鼹鼠的土豆转播</span>
+                                  </div>
+                                  <!-- 大家来评论 -->
+                                    <div class="others">
+                                      <div class="comments">
+                                          <div class="comments-items"></div>
+                                          <form method="post" action="https://www.douban.com/people/103141034/status/1875447427/" class="comment-form">
+                                            <!-- <div style="display:none;"><input type="hidden" name="ck" value="oeNa"/></div> -->
+                                            <input maxlength="280" type="text" name="text" class="comment-text" data-type="status-comment">
+                                            <span class="bn-flat"><input type="submit" value="发表回应"></span>
+                                            <a class="add-more-comments" href="javascript:void(0);">继续回应</a>
+                                          </form>
+                                       </div>
+                                     </div>
+                                </div><!--End of mod-->
                           </div>
-                          <div class="text">
-                            <a href="https://www.douban.com/people/103141034/" class="lnk-people">齐飞</a>
-                            写了
-                            <a class="lnk-subject" href="https://book.douban.com/subject/26838695/" target="_self">12个工作的基本</a> 的书评:
-                          </div>
-                        </div>
-                        <!-- 简介 -->
-                        <div class="bd">
-                          <div class="block note-block">
-                            <div class="pic">
-                              <div class="pic-wrap">
-                                  <a href="https://book.douban.com/review/8037792/" target="_blank"><img src="https://img3.doubanio.com/view/thing_review/large/public/p251095.jpg"></a>
-                                  <span class="valign"></span>
-                             </div>
-                           </div>
+                          <!-- 1875447427, review.html -->
+                          <!-- 第二个数据 是谁的？来自我的关注人 他评价了一本书-->
+                          <div class="status-item"
+                              data-sid="1875622807"
+                              data-action="3"
+                              data-target-type="book"
+                              data-object-kind="1001"
+                              data-object-id="26838695">
 
-                           <div class="content">
-                             <div class="title">
-                                <a href="https://book.douban.com/review/8037792/">想永远月薪3000，只要远离这12种能力！</a>
-                              </div>
-                              <p>为什么进入职场，3年，5年，10年以后混的不一样呢？有些人offer拿到手软，而有些人却还在苦逼的投简历与一群刚毕业的大学生竞争底层岗位呢？ 这中间的差距差在哪里呢？《12个工作基本》这本书认为，在职场上你需要具备这12种基本能力...</p>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- 发表时间 由谁分享 -->
-                      <div class="actions">
-                        <span class="created_at" title="2016-08-11 07:23:41">
-                            <a href="https://www.douban.com/people/103141034/status/1875447427/">8月11日</a>
-                          </span>
-                        <a href="https://www.douban.com/people/103141034/status/1875447427/" class="btn btn-action-reply">回应</a>
-                          &nbsp;&nbsp;<a href="https://www.douban.com/people/103141034/status/1875447427/" class="btn btn-key-like  btn-like">赞</a>
-                          <span class="count like-count">(1)</span>
-                          &nbsp;&nbsp;<a href="https://www.douban.com/people/103141034/status/1875447427/" class="btn btn-key-reshare btn-reshare">转播</a>
-                          <span class="reshared_by">由鼹鼠的土豆转播</span>
-                      </div>
-                      <!-- 大家来评论 -->
-                        <div class="others">
-                          <div class="comments">
-                              <div class="comments-items"></div>
-                              <form method="post" action="https://www.douban.com/people/103141034/status/1875447427/" class="comment-form">
-                                <!-- <div style="display:none;"><input type="hidden" name="ck" value="oeNa"/></div> -->
-                                <input maxlength="280" type="text" name="text" class="comment-text" data-type="status-comment">
-                                <span class="bn-flat"><input type="submit" value="发表回应"></span>
-                                <a class="add-more-comments">继续回应</a>
-                              </form>
-                          </div>
-                        </div>
-                        </div>
-                      </div>
-                      <!-- 1875447427, review.html -->
+                              <div class="mod" data-status-id="1875622807">
+                                <div class="hd">
+                                  <div class="usr-pic">
+                                      <a href="https://www.douban.com/people/144293441/" title="风雨钱行"><img src="https://img3.doubanio.com/icon/u144293441-1.jpg" alt="风雨钱行"/></a>
+                                   </div>
+                                  <div class="text">
+                                      <a href="https://www.douban.com/people/144293441/" class="lnk-people">风雨钱行</a>
+                                      读过
+                                      <span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                                        :
+                                    </div>
+                                  </div>
 
+                                <div class="bd">
+                                  <div class="block block-subject">
+                                    <div class="pic">
+                                        <a href="https://book.douban.com/subject/26838695/" target="_blank" title="12个工作的基本" class="media"><img src="https://img3.doubanio.com/view/status/small/public/2MRNnt.jpg"></a>
+                                    </div>
+                                    <div class="content">
+                                      <div class="title">
+                                        <a href="https://book.douban.com/subject/26838695/" target="_blank">12个工作的基本</a>
+                                          <span class="allstar00"></span>
+                                          <strong class="rating_num"></strong>
+                                      </div>
+                                            <p>畅销日本十年的经典工作术
+                                        所有工作方法论背后的基本原理
+                                        ...................
+                                        ※...</p>
+                                        <div class="info">
+                                            <ul>
+                                                    <li><span class="label">作者:</span><span>[日]大久保幸夫</span>
+
+                                                    <li><span class="label">出版:</span><span>江西人民出版社·后浪出版公司</span>
+
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  <blockquote>
+                                    <p>12种工作基本能力都值得我们学习，目前对我来说正在用到的有，反应力，亲和力，乐观力，持续学习力，</p>
+                                  </blockquote>
+                                  <div class="actions">
+                                    <span class="created_at" title="2016-08-11 17:32:46"><a href="https://www.douban.com/people/144293441/status/1875622807/">8月11日</a></span>
+                                    <a href="https://www.douban.com/people/144293441/status/1875622807/" class="btn btn-action-reply" data-action-type="showComments" data-count="0">回应</a>
+                                      &nbsp;&nbsp;<a href="https://www.douban.com/people/144293441/status/1875622807/" class="btn btn-key-like  btn-like" data-action-type="like" >赞</a>
+                                      &nbsp;&nbsp;<a href="https://www.douban.com/people/144293441/status/1875622807/" class="btn btn-key-reshare btn-reshare" data-action-type="reshare" >转播</a>
+                                    <span class="reshared_by">由鼹鼠的土豆转播</span>
+                                  </div>
+                                  <div class="others">
+                                    <div class="comments">
+                                        <div class="comments-items"></div>
+                                        <form method="post" action="https://www.douban.com/people/144293441/status/1875622807/" class="comment-form"><div style="display:none;"><input type="hidden" name="ck" value="oeNa"/></div>
+                                            <input maxlength="280" type="text" name="text" class="comment-text" data-type="status-comment">
+                                            <span class="bn-flat"><input type="submit" value="发表回应" data-type="status-comment"></span>
+                                            <a href="javascript:void(0);" class="add-more-comments">继续回应</a>
+                                        </form>
+                                    </div>
+                                  </div>
+                                  </div>
+                                </div>
+                            </div>
+                          <!-- 1875622807, subject.html -->
+                    </div>
+
+                    <script>window.crt_uid = "zzynews";</script>
+                    <div class="paginator">
+                        <span class="prev">&lt;前页</span>
+                        <span class="thispage" data-total-page="9223372036854775807">1</span>
+                        <a href="?p=2" >2</a>
+                        <a href="?p=3" >3</a>
+                        <a href="?p=4" >4</a>
+                        <a href="?p=5" >5</a>
+                        <a href="?p=6" >6</a>
+                        <a href="?p=7" >7</a>
+                        <a href="?p=8" >8</a>
+                        <a href="?p=9" >9</a>
+                        <span class="break">...</span>
+                        <span class="next">
+                                <link rel="next" href="?p=2"/>
+                                <a href="?p=2" >后页&gt;</a>
+                        </span>
 
                     </div>
+                   <!--底部换页-->
+              </div>
+              <!--End of statuses-->
+                <aside>
+                  <div class="notify-mod">
+                          <h2>豆瓣正在发生&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;</h2>
+                          <ul>
+                            <li>
+                              <a target="_blank" href="https://www.douban.com/gallery/topic/%E5%A5%A5%E8%BF%90/">奥运，边看边聊才是正确姿势！</a>
+                            </li>
+                            <li>
+                              <a target="_blank" href="https://www.douban.com/update/topic/灵异故事">压箱底的#灵异故事#</a>
+                            </li>
+                          </ul>
                   </div>
 
-            </div><!--End of article-->
+                  <div id="dale_homepage_login_top_right" class="mod">
+                      <img src="images/aside.jpg" alt="asidepic" />
+                  </div>
+
+                  <div id="friend" class="mod">
+                      <h2>我的关注&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
+                          <span class="pl">&nbsp;<a href="https://www.douban.com/contacts/list" target="_self">成员163</a>&nbsp;&middot;&nbsp;<a href="https://www.douban.com/people/zzynews/contact_site" target="_self">小站3</a>
+                                    ) </span>
+                      </h2>
+                        <div class="list">
+                          <ul>
+                            <li><a href="https://www.douban.com/people/88369133/"><img src="https://img3.doubanio.com/icon/u88369133-2.jpg" class="show-title" title="迅哥儿"></a>
+                            <li><a href="https://www.douban.com/people/61515953/"><img src="https://img3.doubanio.com/icon/u61515953-5.jpg" class="show-title" title="薛定谔的卡特"></a>
+                            <li><a href="https://www.douban.com/people/AirScript/"><img src="https://img3.doubanio.com/icon/u81608348-3.jpg" class="show-title" title="AirScript"></a>
+                            <li><a href="https://www.douban.com/people/wingxin1/"><img src="https://img3.doubanio.com/icon/u2380845-30.jpg" class="show-title" title="无影"></a>
+                            <li><a href="https://www.douban.com/people/remlostime/"><img src="https://img3.doubanio.com/icon/u3157374-2.jpg" class="show-title" title="superid"></a>
+                            <li><a href="https://www.douban.com/people/figure9/"><img src="https://img1.doubanio.com/icon/u3707498-8.jpg" class="show-title" title="figure9"></a>
+                          </ul>
+                        </div>
+                          <p><a href="/contacts/rlist">&gt; 被21人关注</a>
+                  </div>
+
+                  <div id="fp-sites" class="mod">
+                      <p><a href="https://site.douban.com/new_site/">&gt;&nbsp;申请创建小站</a></p>
+                  </div>
+
+                  <div class="mod">
+                    <a href="https://www.douban.com/doubanapp/app?channel=Db_Homepage_Bar&amp;direct_dl=1" target="_blank" style="display: block; margin: 0px 0px 10px 0px;">
+                      <img src="https://img3.doubanio.com/f/sns/3ac664d558f14a44d5fd6a065029e69eba0ed062/pics/sns/index_douban_ad_4.png" width="250px" height="80px" />
+                    </a>
+                  </div>
+
+                  <div class="mod" id="events">
+                      <h2>热门活动&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
+                        <span class="pl">&nbsp;(<a href="https://www.douban.com/online/" target="_self">换一个</a>) </span>
+                      </h2>
+                      <ul id="event-list"></ul>
+                      <p><a href="https://www.douban.com/online/">&gt;&nbsp;更多线上活动</a></p>
+                  </div>
+
+                  <!-- <div id="dale_homepage_online_activity_promo"></div> -->
+                  <div id="side-ypy" class="mod">
+                    <h2>豆瓣一拍一&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
+                              <span class="pl">&nbsp;(<a href="https://ypy.douban.com" target="_self">更多</a>) </span>
+                    </h2>
+                    <ul>
+                      <li>
+                          <div class="pic">
+                            <a href="https://ypy.douban.com/package/1478?utm_source=douban&utm_medium=login_bottom_right&utm_campaign=package">
+                              <img src="https://qnypy.doubanio.com/201608111611085572__m">
+                            </a>
+                          </div>
+                          <div class="info">
+                            <a href="https://ypy.douban.com/package/1478?utm_source=douban&utm_medium=login_bottom_right&utm_campaign=package" class="title">
+                              限时特惠｜爱宠and我</a>
+                            <br>城市: 北京
+                            <br>价格: 639
+                          </div>
+                      </li>
+                      <li>
+                      <div class="pic">
+                        <a href="https://ypy.douban.com/package/1341?utm_source=douban&utm_medium=login_bottom_right&utm_campaign=package">
+                          <img src="https://qnypy.doubanio.com/201608021055138319__m">
+                        </a>
+                      </div>
+                      <div class="info">
+                        <a href="https://ypy.douban.com/package/1341?utm_source=douban&utm_medium=login_bottom_right&utm_campaign=package" class="title">
+                          只有我们知道的地方</a>
+                        <br>城市: 杭州、上海、北京
+                        <br>价格: 3600
+                      </div>
+                    </li>
+                    </ul>
+                    <a href="https://ypy.douban.com?utm_source=douban&utm_medium=login_bottom_right&utm_campaign=package" class="ft-lnk"></a>
+                  </div>
+                  <!--豆瓣一拍一-->
+
+                </aside>
+
+            </article><!--End of article-->
           </div><!--End of grid-16-->
+
+          <footer>
+              <span id="icp" class="fleft gray-link">
+                  &copy; 2005－2016 douban.com, all rights reserved 北京豆网科技有限公司
+              </span>
+              <a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+              <span class="fright">
+                  <a href="https://www.douban.com/about">关于豆瓣</a>
+                  · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+                  · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+                  · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+                  · <a href="https://help.douban.com/?app=main" target="_blank">帮助中心</a>
+                  · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+                  · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+              </span>
+        </footer>
         </div><!--End of content-->
       </div><!--End of wrapper-->
   </body>
