@@ -4,16 +4,18 @@
     <meta charset="utf-8">
     <title>豆瓣</title>
     <meta content="提供图书、电影、音乐唱片的推荐、评论和价格比较，以及城市独特的文化生活。" name="description"/>
+    <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon"><!--douban icon-->
   </head>
   <body>
     <!--全局顶部导航-->
       <div id="db-global-nav" class="global-nav">
           <div class="bd">
-                  <div class="top-nav-info">
+                <div class="top-nav-info">
                     <ul>
                         <li><a id="" href="#">豆邮</a></li>
                         <li><a target="_blank" href="#"><span>NilesChang 的账号</span><span></span><!--下箭头效果--></a>
-                            <div class="more-items"><!--单击时出现的个人信息列表-->
+                          <!--单击时出现的个人信息列表--><!--单击时出现的个人信息列表--><!--单击时出现的个人信息列表--><!--单击时出现的个人信息列表-->
+                            <!-- <div class="more-items">
                                 <table cellpadding="0" cellspacing="0">
                                     <tr><td><a href="#">个人主页</a></td></tr>
                                     <tr><td><a target="_blank" href="#">我的订单</a></td></tr>
@@ -21,23 +23,23 @@
                                     <tr><td><a target=“_blank” href="#">账号管理</a></td></tr>
                                     <tr><td><a href="#">退出</a></td></tr>
                                 </table>
-                            </div>
+                            </div> -->
                         </li>
                     </ul>
                   </div><!--End of top-nav-info-->
 
-                  <div class="top-nav-reminder">
+                <div class="top-nav-reminder">
                      <a href="#" class="">提醒</a>
-                     <div id="top-nav-notimenu" class="more-items">
+                     <!-- <div id="top-nav-notimenu" class="more-items">
                         <div class="bd">
                           <p>加载中...</p>
                         </div>
-                     </div>
+                     </div> -->
                   </div><!--End of top-nav-reminder-->
 
-                  <div class="top-nav-doubanapp">
+                <div class="top-nav-doubanapp">
                       <a href="https://www.douban.com/" class="lnk-doubanapp">下载豆瓣客户端</a>
-                      <div id="top-nav-appintro" class="more-items">
+                      <!-- <div id="top-nav-appintro" class="more-items">
                           <p class="appintro-title">豆瓣</p>
                           <p class="slogan">我们的精神角落</p>
                           <p class="qrcode">扫码直接下载</p>
@@ -49,8 +51,7 @@
                       </div>
                       <div id="doubanapp-tip">
                           <a href="#" class="tip-link">豆瓣4.0全新发布</a>
-                          <!--关闭提示-->
-                      </div>
+                      </div>-->
                   </div><!--End of top-nav-doubanapp-->
 
                 <div class="global-nav-items">
@@ -65,18 +66,193 @@
                       <li  class=""><a href="#" target="_blank">东西</a></li>
                       <li  class=""><a href="#" target="_blank">市集</a></li>
                       <li><a href="#more" class="bn-more"><span>更多</span></a>
-                        <div class="more-items">
+                        <!-- <div class="more-items">
                           <table cellpadding="0" cellspacing="0">
                             <tr><td><a href="https://moment.douban.com" target="_blank">一刻</a></td></tr>
                             <tr><td><a href="https://ypy.douban.com" target="_blank">一拍一</a></td></tr>
                           </table>
-                        </div>
+                        </div> -->
                       </li>
                     </ul>
                 </div>
           </div><!--End of bd-->
       </div><!--End of 顶部导航-->
-
       <!--主页导航-->
+      <div id="db-nav-sns" class="nav">
+              <div class="nav-wrap">
+                <div class="nav-primary">
+
+                      <div class="nav-search">
+                        <form action="https://www.douban.com/search" method="get">
+                          <fieldset>
+                              <legend>搜索</legend>
+                              <label for="inp-query">搜索你感兴趣的内容和人</label>
+                              <div class="inp">
+                                <input type="hidden" name="source" value="suggest">
+                                <input id="inp-query" name="q" size="22" title="搜索你感兴趣的内容和人...."  maxlength="60" autocomplete="off" value="">
+                              </div>
+                              <div class="inp-btn">
+                                <input type="submit" value="搜索">
+                              </div>
+                          </fieldset>
+                        </form>
+                      </div>
+
+                      <div class="nav-logo">
+                        <a href="https://www.douban.com">豆瓣社区</a>
+                      </div>
+
+                      <div class="nav-items">
+                        <ul>
+                          <li><a href="https://www.douban.com/">首页</a></li>
+                            <li><a href="https://www.douban.com/mine/">我的豆瓣</a></li>
+                          <li>
+                              <a href="https://www.douban.com/explore/">浏览发现</a>
+                              <img src="https://img3.doubanio.com/f/shire/e49eca1517424a941871a2667a8957fd6c72d632/pics/new_menu.gif" alt="new" />
+                          </li>
+                          <li>
+                              <a href="https://www.douban.com/app/">移动应用</a>
+                          </li>
+                          <li>
+                            <a href="https://www.douban.com/game/explore?dcs=sns-nav&amp;dcm=douban">游戏</a>
+                          </li>
+                          <li><a href="https://www.douban.com/online/">线上活动</a></li>
+                        </ul>
+                      </div>
+                </div>
+              </div>
+      </div><!--End of 主页导航-->
+      <!-- 正文 -->
+      <div id="wrapper">
+        <div id="content">
+          <div class="grid-16-8 clearfix">
+            <div class="article">
+
+              <div class="statuses-setting">
+                          <div class="hd">
+                              <a href="#" class="a_status_setting">首页设置</a>
+                          </div>
+                          <!-- <div class="bd" style="display:none;">
+                              <i class="arrow"></i>
+                              <div class="loading">正在加载中...</div>
+                          </div>
+                          <p class="setting-tips" style="display:none;">
+                            设置成功! 相关内容后继会出现在你的首页上</p> -->
+              </div>
+                <!-- script语句-->
+              <div id="statuses">
+                    <div id="db-isay" class="">
+                        <form name="mbform" method="post" action="https://www.douban.com/">
+
+                            <ul class="isay-links">
+                                  <li class="isay-main active"><a data-action="main" href="javascript:void(0);">说句话</a></li>
+                                  <li class="isay-pic"><a data-action="pic" href="javascript:void(0);">发照片</a></li>
+                                  <li class="isay-share"><a data-action="share" href="javascript:void(0);">推荐网页</a></li>
+                                  <li class="notes-link"><a href="https://www.douban.com/note/create" title="添加日记">写日记</a></li>
+
+                                  <li class="commodity-link">
+                                        <a data-action="commodity" href="javascript:void(0)" title="发布东西">发布东西</a>
+                                        <!-- <div class="publish-ways">
+                                            <div class="share"><a target="_blank" href="https://dongxi.douban.com/show/create">发布东西</a></div>
+                                            <div class="review"><a target="_blank" href="https://dongxi.douban.com/article/create">写图文评论</a></div>
+                                            <s class="arr"></s>
+                                            <s class="arr-inner"></s>
+                                        </div> -->
+                                  </li>
+                            </ul>
+
+                              <div class="item">
+                                  <!-- <p class="highlighter mention-highlighter"></p> -->
+                                  <!-- <p class="highlighter error-highlighter"></p> -->
+
+                                  <label id="isay-label" for="isay-cont">分享生活点滴...</label>
+                                  <textarea data-minheight="70" tabindex="1" id="isay-cont" name="comment" rows="1"></textarea>
+                              </div>
+                              <div id="isay-act-field" class="isay-act"></div>
+                              <div class="btn">
+                                    <span id="isay-counter"></span>
+                                    <span class="bn-submit bn-flat"><input id="isay-submit" tabindex="1" type="submit" value="发布"></span>
+                                    <!-- <a target="_blank" href="https://www.douban.com/service/bookmarklet" class="lnk-share-tools" onclick="moreurl(this, {from:'index_rec'})" >添加网页推荐工具</a> -->
+                              </div>
+
+                        </form>
+                        <!-- 其他功能 -->
+                      </div>
+
+                    <div class="stream-items">
+                      <!-- 静态展示 -->
+
+                      <div class="status-item"
+                            data-sid="1875447427"
+                            data-action="7"
+                            data-target-type="book"
+                            data-object-kind="1012"
+                            data-object-id="8037792">
+                      <!-- 第一个数据 -->
+                      <div class="mod" data-status-id="1875447427">
+                        <!-- 谁 干了什么-->
+                        <div class="hd">
+                          <div class="usr-pic">
+                            <a href="#" title="齐导"><img src="https://img3.doubanio.com/icon/u103141034-3.jpg" alt="齐飞"/></a>
+                          </div>
+                          <div class="text">
+                            <a href="https://www.douban.com/people/103141034/" class="lnk-people">齐飞</a>
+                            写了
+                            <a class="lnk-subject" href="https://book.douban.com/subject/26838695/" target="_self">12个工作的基本</a> 的书评:
+                          </div>
+                        </div>
+                        <!-- 简介 -->
+                        <div class="bd">
+                          <div class="block note-block">
+                            <div class="pic">
+                              <div class="pic-wrap">
+                                  <a href="https://book.douban.com/review/8037792/" target="_blank"><img src="https://img3.doubanio.com/view/thing_review/large/public/p251095.jpg"></a>
+                                  <span class="valign"></span>
+                             </div>
+                           </div>
+
+                           <div class="content">
+                             <div class="title">
+                                <a href="https://book.douban.com/review/8037792/">想永远月薪3000，只要远离这12种能力！</a>
+                              </div>
+                              <p>为什么进入职场，3年，5年，10年以后混的不一样呢？有些人offer拿到手软，而有些人却还在苦逼的投简历与一群刚毕业的大学生竞争底层岗位呢？ 这中间的差距差在哪里呢？《12个工作基本》这本书认为，在职场上你需要具备这12种基本能力...</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 发表时间 由谁分享 -->
+                      <div class="actions">
+                        <span class="created_at" title="2016-08-11 07:23:41">
+                            <a href="https://www.douban.com/people/103141034/status/1875447427/">8月11日</a>
+                          </span>
+                        <a href="https://www.douban.com/people/103141034/status/1875447427/" class="btn btn-action-reply">回应</a>
+                          &nbsp;&nbsp;<a href="https://www.douban.com/people/103141034/status/1875447427/" class="btn btn-key-like  btn-like">赞</a>
+                          <span class="count like-count">(1)</span>
+                          &nbsp;&nbsp;<a href="https://www.douban.com/people/103141034/status/1875447427/" class="btn btn-key-reshare btn-reshare">转播</a>
+                          <span class="reshared_by">由鼹鼠的土豆转播</span>
+                      </div>
+                      <!-- 大家来评论 -->
+                        <div class="others">
+                          <div class="comments">
+                              <div class="comments-items"></div>
+                              <form method="post" action="https://www.douban.com/people/103141034/status/1875447427/" class="comment-form">
+                                <!-- <div style="display:none;"><input type="hidden" name="ck" value="oeNa"/></div> -->
+                                <input maxlength="280" type="text" name="text" class="comment-text" data-type="status-comment">
+                                <span class="bn-flat"><input type="submit" value="发表回应"></span>
+                                <a class="add-more-comments">继续回应</a>
+                              </form>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                      <!-- 1875447427, review.html -->
+
+
+                    </div>
+                  </div>
+
+            </div><!--End of article-->
+          </div><!--End of grid-16-->
+        </div><!--End of content-->
+      </div><!--End of wrapper-->
   </body>
 </html>
