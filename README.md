@@ -12,4 +12,4 @@
  Weeks|Reading| Practice
 ---|---|---
 week1 | [**HTML&css**:Design and bulid websites](https://book.douban.com/subject/21338365/) chapter 1-13| 制作了含五个静态网页的“伪博客“”
-week2 | [**HTML&css**:Design and bulid websites](https://book.douban.com/subject/21338365/)  chapter 14-19<br>[**HTML5**: The missing Manual](https://book.douban.com/subject/26354468/)  chapter 1-4| 用HTML5写出豆瓣主页面
+week2 | [**HTML&css**:Design and bulid websites](https://book.douban.com/subject/21338365/)  chapter 14-19<br>[**HTML5**: The missing Manual](https://book.douban.com/subject/26354468/)  chapter 1-4<br>[**CSS3**:The missing Manual](https://book.douban.com/subject/17458569/) chapter 1-11| 复杂页面练习：豆瓣主页
