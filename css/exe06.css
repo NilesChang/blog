@@ -1,3 +1,50 @@
+html{
+  padding-top: 25px;
+  background-image: url(../exercise/images/bg_body.png);
+}
+
+body{
+  width:80%;
+  padding: 20px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  background-color: #e1edeb;
+}
+
+h1{
+  font-family: "PingFang SC";
+  font-weight: normal;
+  color: #666666;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+h2{
+  color: #b0000c;
+  font-weight: normal;
+  font-size: 1.7em;
+  border-bottom: 2px white solid;
+  background-image: url(../exercise/images/head-icon.png);
+  background-repeat: no-repeat;
+  padding: 0 0 2px 60px;
+  margin: 0;
+}
+
+p{
+  color: #b1967c;
+  font-family: "PingFang SC";
+  font-weight: normal;
+  font-size: 1.2em;
+  /*border-bottom: 2px white solid;*/
+  padding: 0 0 2px 60px;
+}
+
+.intro{
+  color: #6a94cc;
+  font-size: 1.2em;
+  margin-left: 0;
+  margin-bottom: 25px;
+}
 .pullQuote{
   float:right;
   max-width: 300px;
