@@ -1,54 +1,141 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="description" content="about" />
-		<title>历史文章</title>
-		<link href="../css/styles.css" type="text/css" rel="stylesheet" />
-<!-- 		<link href="../css/resources.css" type="text/css" rel="stylesheet" /> -->
-	</head>
-	<body>		
-		<div id="page">
-			
-			<ul id="main_nav">
-				<li class="nav"><a href="../index.html">Home</a></li>
-				<li class="nav"><a href="index.html" class="on">Archives</a></li>
-				<li class="nav"><a href="../works/index.html">Works</a></li>
-				<li class="nav"><a href="../exercise/index.html" id="coming-soon">Exercises</a></li>
-				<li class="nav"><a href="../about.html">About</a></li>
-			</ul>
-			
-			<div id="header">			
-				<h2>历史文章：</h2>
-			</div>
-				
-<!-- 在文章首页加入标签栏，定位文章 -->
-				<div id="left_content">
-					<ul id="tag_lists">
-						<li class="tag">HTML&amp;CSS</li>
-						<li class="tag">JavaScript</li>
-						<li class="tag">Ajax</li>
-						<li class="tag">计算机理论</li>
-						<li class="tag">读书思考</li>
-						<li class="tag">小说随笔</li>
-						<li class="tag">学习资源</li>
-					</ul>
-				</div>
-				
-				<div id="right_content">
-				<form id="search" action="" method="get">
-					<p>
-					<input class="text" type="search" name="search" value="请输入关键字"/>
-					<input class="submit" type="submit" value="Search" />
-					</p>
-				</form>
-					<ol id="article_lists">
-						<li class="note"><a href="01.html">读丁东《精神的流浪》</a><br/><br/>“光发牢骚没有用，还是要从自己做起，从现实做起，从脚下做起，一点一滴地做实事。环境是由人来创造的，新的思想是靠人来表达和传播的。”</li>
-						<li class="note"><a href="02.html">愿你能永远正视他们的眼睛</a><br/><br/>“不能因为我们在此之前已经失败了一百年，就认为我们没有理由去争取胜利。”<br/>“在我能和别人过得去之前，我首先要和自己过得去。有一种东西不能遵循从众原则，那就是——人的良心。”</li>
-						<li class="note">设计篇：如何为你的网站选择图片<br/>"Good" images tend to have clarity in terms of both visual and psychological comprehension. They communicate.（好的图片常常视觉清爽、思维清晰）</li>
-					</ol>				
-				</div> 				
-		</div>
-		<h5>&copy;2016-NilesChang的小站</h5>
-	</body>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>格式化文本：博客主页</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body{
+          background-image:url(images/bg_page.png);
+          background-repeat: repeat-x;
+          background-color: #fff;
+        }
+
+        .wrapper {
+        	width: 960px;
+        	margin-right: auto;
+        	margin-left: auto;
+          overflow: hidden; /* contain float */
+        	background-color: #fff;
+        	background-image: url(images/bg_main.jpg);
+        	background-position: left top;
+        	background-repeat: no-repeat;
+        }
+
+        .banner h1 {
+        	font: normal 48px Georgia, "Times New Roman", Times, serif;
+        	text-align: right;
+          color: #272D32;
+        	margin-top: 48px;
+        }
+
+        /*history */
+        .history {
+          float: left;
+        	margin-right: 10px;
+        	margin-left: 60px;
+        	margin-top: 135px;
+        	/*添加卷轴效果、图片排列顺序很关键*/
+        	background: url(images/scroll_top.jpg) no-repeat center top,
+        							url(images/scroll_bottom.jpg) no-repeat center bottom,
+        							url(images/scroll_middle.jpg) repeat-y center top;
+        	padding: 70px 0 60px 0;
+        }
+        .history h3 {
+        	font: bold normal 20px Georgia, "Times New Roman", Times, serif;
+          text-indent: 25px;
+        	color: #323A3F;
+        	margin-bottom: 18px;
+        }
+        .history ul {
+        	font: 14px Tahoma, Geneva, sans-serif;
+        }
+        .history li {
+          list-style: none;
+          background-image: url(images/bullet.png);
+          background-repeat: no-repeat;
+          background-position: 0 4px;
+          padding-left: 25px;
+          margin-bottom: 10px;
+          margin-left: 30px;
+          margin-right: 40px;
+        }
+      /*intro*/
+        .main {
+        	float: right;
+        	width: 430px;
+        	margin-right: 45px;
+        	padding-top: 45px;
+        }
+
+        .main h2 {
+        	margin-bottom: 25px;
+          font-size: 22px;
+        	font-family: STKaiti;
+        	background-image: url(images/underline.png);
+        	background-repeat: no-repeat;
+        	background-position: left bottom;
+        	/* 边框出现在下方*/
+        	padding-bottom: 7px;
+        	/* 边框不紧挨着文字*/
+        }
+        .main p {
+        	font: 18px Tahoma, Geneva, sans-serif;
+        	color: #323A3F;
+        	margin-bottom: 20px;
+          font-family: STKaiti;
+        }
+        .main span{
+          margin-right: 3px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <div class="banner">
+        <h1><span>Niles Chang</span></h1>
+      </div>
+      <div class="history">
+        <ul>
+          <h3>历史文章:</h3>
+          <li>读丁东《精神的流浪》</li>
+          <li>愿你能永远正视他们的眼睛</li>
+          <li>修复记忆的骑士</li>
+          <li>我认出了风暴</li>
+          <li>一部交响曲的两个版本</li>
+          <li>身为文盲的焦虑</li>
+          <li>黎明之前：雷震和他的时代</li>
+          <li>对自己负责是一切向上心的出发点</li>
+        </ul>
+      </div>
+
+    <div class="main">
+      <h2 class="article_title">读丁东《精神的流浪》</h2>
+      <p class="article_intro">“<q>呕血心事无成败，拔地苍松有远声</q>”。可是从什么时候起，我们慢慢忘记了这份道理并习惯于说：反正又做不到，那就不去做了；
+        又是什么时候开始，我们习惯了割裂过去、甚至避谈未来？ 人在一生中，遇到各种坎坷是难免的。怨天尤人不行，等待顺境再做事也不行。只有抓紧做事，才能在社会中站起来。
+      <br><span>(<a href="01.html">阅读全文</a>)<span></p>
+        <!--archives/01.html -->
+
+        <h2 class="article_title">愿你能永远正视他们的眼睛</h2>
+        <p class="article_intro"><q>有时候，我觉得自己做家长很失败。可是我就是他们拥有的一切。在他们仰视别人之前，首先仰视的是我。
+          我希望自己正直，以便能坦然面对他......如果我默许这类事情发生，坦率地讲，我就没法再正视他的眼睛。一旦我不能正视他的眼睛，我就知道自己已经永远失去了他，
+          我不想失去他和斯库特，因为他们就是我的一切。</q></p>
+          <!--archives/02.html -->
+
+      <h2 class="article_title">修复记忆的骑士</h2>
+      <p class="article_intro">曾有记者问贾樟柯：你电影里的忧伤来自哪里？贾樟柯答：来自我的忧伤。<br>
+          失望和愤怒总是后青春期挥之不去的情绪。一晃将近20年了，曾经的愤怒青年也早已度过不惑之年。后浪追赶着前浪，
+          如今的贾樟柯也已成为新生代导演中的领军人物，他的电影引来更多人的关注. </p>
+
+        <h2 class="article_title">我认出了风暴</h2>
+        <p class="article_intro">最近打算去看许鞍华导演的《黄金时代》，提前做了下功课。电影是讲萧红的，，他们代表了这样一批人：早先被共产主义蒙蔽，替党的宣传卖过力气，
+          到后来理想逐渐幻灭。<q>我认出了风暴而且激动如大海。/我舒展开又跌回我自己，/又把自己抛出去，并且独个儿/置身在伟大的风暴里。</q>诗人里尔克的这首诗，像是和那个时代有某种精神上的共鸣。</p>
+
+
+      </div>
+
+    </div>
+  </body>
 </html>
