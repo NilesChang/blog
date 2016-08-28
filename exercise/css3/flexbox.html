@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>跨浏览器的三列布局</title>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: #0ff;
+        /*设置为伸缩容器*/
+        display: -webkit-flex;
+        display: flex;
+        /* 设置伸缩流*/
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+      }
+      header, footer{
+        width: 100%;
+        padding: 10px;
+        height: 60px;
+        background-color: #ccc;
+      }
+      section{
+        width: 80%;
+        margin: 0 auto;
+        height: 700px;
+        background-color: #f00;
+        display: -webkit-flex;
+        display: flex;
+
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+
+        /*页面主体区域根据视窗高度自适应*/
+        /*设置伸缩性*/
+        -webkit-flex: 1;
+        flex: 1;
+
+        /*侧轴排列方式*/
+        -webkit-align-items: stretch;
+        align-items: stretch;
+      }
+
+      article{
+        background-color: #f0f;
+        /*自适应宽度*/
+        -webkit-flex: 1;
+        flex: 1;
+        /* 重新排列顺序*/
+        -webkit-order: 2;
+        order: 2;
+      }
+      nav, aside{
+        width: 15%;
+        padding: 10px;
+        background-color: #f36;
+      }
+      aside{
+        -webkit-order: 3;
+        order: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>页眉</header>
+    <section>
+      <article>main content</article>
+      <nav>nav</nav>
+      <aside>sidebar</aside>
+    </section>
+    <footer>footer</footer>
+  </body>
+</html>
