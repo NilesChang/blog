@@ -4,10 +4,10 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Morphing Power Cubes</title>
+  <title>十二生肖走马灯</title>
   <style type="text/css" media="screen">
     body {
-      background-color: black;
+      background-color: #121212;
       color: white;
       font-family: 'Lucida Grande', Verdana, Arial;
       font-size: 12px;
@@ -22,13 +22,17 @@
     #container {
       width: 100%;
       height: 700px;
-      -webkit-perspective: 800; /* For compatibility with iPhone 3.0, we leave off the units here */
+      /*激活3D效果*/
+      -webkit-perspective: 800;
+      /* For compatibility with iPhone 3.0, we leave off the units here */
+      /*设置3D变形观看点，默认50% 50:，设置X轴与Y轴位置%*/
       -webkit-perspective-origin: 50% 225px;
     }
     #stage {
       width: 100%;
       height: 100%;
       -webkit-transition: -webkit-transform 2s;
+      /*指定嵌套元素的3D显示效果*/
       -webkit-transform-style: preserve-3d;
     }
 
@@ -38,6 +42,7 @@
       margin: 0 auto;
       height: 200px;
       width: 200px;
+      /*指定嵌套元素的3D显示效果，缺少则为单面*/
       -webkit-transform-style: preserve-3d;
     }
 
@@ -54,15 +59,17 @@
       color: black;
       background-color: rgba(255, 255, 255, 0.6);
       -webkit-transition: -webkit-transform 2s, opacity 2s;
+      /*设置背面不可见，当且仅当后面的backfaces类移除后显示为不可见背面*/
       -webkit-backface-visibility: hidden;
     }
 
     .plane img{
       display: block;
-      padding: 50px 40px 30px 40px;
+      margin: 0px auto;
     }
 
     #shape.backfaces .plane {
+      /*默认设置：显示背面，反面可见*/
       -webkit-backface-visibility: visible;
     }
 
@@ -72,38 +79,54 @@
 
     @-webkit-keyframes spin {
       from { -webkit-transform: rotateY(0); }
+      /*设置绕Y轴旋转方向*/
       to   { -webkit-transform: rotateY(-360deg); }
     }
+    /*@-webkit-keyframes spin {
+      from { -webkit-transform: rotateY(0); }
+      to   { -webkit-transform: rotateY(360deg); }
+    }*/
 
     /* ---------- cube styles ------------- */
+    /**
+     * scale3d(tx,ty,tz) 使用三维向量坐标定义元素在每个方向缩放多少
+     * 需配合其他的变形函数一起使用才有效果，在这一例子中，1.8的缩放比例适用于前六个图片，而后六个缩放比例为0.9
+     *
+     */
     .cube > .one {
       opacity: 0.5;
-      -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateX(90deg) translateZ(100px);
+      /*绕X轴旋转90度到了top*/
+      -webkit-transform: scale3d(1.8, 1.8, 1.8) rotateX(90deg) translateZ(100px);
     }
 
     .cube > .two {
       opacity: 0.5;
-      -webkit-transform: scale3d(1.2, 1.2, 1.2) translateZ(100px);
+      /*不设置即为默认开始最前面*/
+      -webkit-transform: scale3d(1.8, 1.8, 1.8) translateZ(100px);
     }
 
     .cube > .three {
       opacity: 0.5;
-      -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(90deg) translateZ(100px);
+      /*绕Y轴旋转90度在右面*/
+      -webkit-transform: scale3d(1.8, 1.8, 1.8) rotateY(90deg) translateZ(100px);
     }
 
     .cube > .four {
       opacity: 0.5;
-      -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(180deg) translateZ(100px);
+      /*绕Y轴旋转180度到了后面的位置*/
+      -webkit-transform: scale3d(1.8, 1.8, 1.8) rotateY(180deg) translateZ(100px);
     }
 
     .cube > .five {
       opacity: 0.5;
-      -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(-90deg) translateZ(100px);
+      /*绕Y轴旋转-90度到了左面*/
+      -webkit-transform: scale3d(1.8, 1.8, 1.8) rotateY(-90deg) translateZ(100px);
     }
 
     .cube > .six {
       opacity: 0.5;
-      -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateX(-90deg) translateZ(100px) rotate(180deg);
+      /*绕X轴旋转-90度到了底面*/
+      -webkit-transform: scale3d(1.8, 1.8, 1.8) rotateX(-90deg) translateZ(100px) rotate(180deg);
     }
 
 
@@ -131,7 +154,7 @@
       -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateX(-90deg) translateZ(100px);
     }
 
-    /* ---------- ring styles ------------- */
+    /* ---------- 环形样式ring styles ------------- */
     .ring > .one {
       -webkit-transform: translateZ(380px);
     }
@@ -165,11 +188,13 @@
     }
 
     .ring > .nine {
-      -webkit-transform: rotateY(-120deg) translateZ(380px);
+      /*-webkit-transform: rotateY(-120deg) translateZ(380px);*/
+      -webkit-transform: rotateY(240deg) translateZ(380px);
     }
 
     .ring > .ten {
-      -webkit-transform: rotateY(-90deg) translateZ(380px);
+      /*-webkit-transform: rotateY(-90deg) translateZ(380px);*/
+      -webkit-transform: rotateY(270deg) translateZ(380px);
     }
 
     .ring > .eleven {
@@ -257,7 +282,7 @@
 
   <div class="controls">
     <h1>十二生肖走马灯</h1>
-    
+
     <div><button onclick="toggleShape()">变换</button></div>
     <div><input type="checkbox" id="backfaces" onclick="toggleBackfaces()" checked><label for="backfaces">隐藏背面</label></div>
   </div>
@@ -265,18 +290,31 @@
   <div id="container">
     <div id="stage">
       <div id="shape" class="cube backfaces">
-        <div class="plane one"><img src="12animals/1.png" alt=""></div>
-        <div class="plane two"><img src="12animals/2.png" alt=""></div>
-        <div class="plane three"><img src="12animals/3.png" alt=""></div>
-        <div class="plane four"><img src="12animals/4.png" alt=""></div>
-        <div class="plane five"><img src="12animals/5.png" alt=""></div>
-        <div class="plane six"><img src="12animals/6.png" alt=""></div>
-        <div class="plane seven"><img src="12animals/7.png" alt=""></div>
-        <div class="plane eight"><img src="12animals/8.png" alt=""></div>
-        <div class="plane nine"><img src="12animals/9.png" alt=""></div>
-        <div class="plane ten"><img src="12animals/10.png" alt=""></div>
-        <div class="plane eleven"><img src="12animals/11.png" alt=""></div>
-        <div class="plane twelve"><img src="12animals/12.png" alt=""></div>
+        <div class="plane one"><img src="12animals/1.png" alt="" width="150" height="200"></div>
+        <div class="plane two"><img src="12animals/2.png" alt="" width="150" height="200"></div>
+        <div class="plane three"><img src="12animals/3.png" alt="" width="150" height="200"></div>
+        <div class="plane four"><img src="12animals/4.png" alt="" width="150" height="200"></div>
+        <div class="plane five"><img src="12animals/5.png" alt="" width="150" height="200"></div>
+        <div class="plane six"><img src="12animals/6.png" alt="" width="150" height="200"></div>
+        <div class="plane seven"><img src="12animals/7.png" alt="" width="150" height="200"></div>
+        <div class="plane eight"><img src="12animals/8.png" alt="" width="150" height="200"></div>
+        <div class="plane nine"><img src="12animals/9.png" alt="" width="150" height="200"></div>
+        <div class="plane ten"><img src="12animals/10.png" alt="" width="150" height="200"></div>
+        <div class="plane eleven"><img src="12animals/11.png" alt="" width="150" height="200"></div>
+        <div class="plane twelve"><img src="12animals/12.png" alt="" width="150" height="200"></div>
+        <!--
+        <div class="plane one"><img src="12animals/qifei.jpg" alt="" width="150" height="200"></div>
+        <div class="plane two"><img src="12animals/qifei.jpg" alt="" width="150" height="200"></div>
+        <div class="plane three"><img src="12animals/qifei.jpg" alt="" width="150" height="200"></div>
+        <div class="plane four"><img src="12animals/qifei.jpg" alt="" width="150" height="200"></div>
+        <div class="plane five"><img src="12animals/qifei.jpg" alt="" width="150" height="200"></div>
+        <div class="plane six"><img src="12animals/qifei.jpg" alt="" width="150" height="200"></div>
+        <div class="plane seven"><img src="12animals/qifei.jpg" alt="" width="150" height="200"></div>
+        <div class="plane eight"><img src="12animals/qifei.jpg" alt="" width="150" height="200"></div>
+        <div class="plane nine"><img src="12animals/qifei.jpg" alt="" width="150" height="200"></div>
+        <div class="plane ten"><img src="12animals/qifei.jpg" alt="" width="150" height="200"></div>
+        <div class="plane eleven"><img src="12animals/qifei.jpg" alt="" width="150" height="200"></div>
+        <div class="plane twelve"><img src="12animals/qifei.jpg" alt="" width="150" height="200"></div> -->
       </div>
     </div>
   </div>
