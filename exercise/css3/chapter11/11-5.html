@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>改变元素原点（3D）</title>
+  <style type="text/css">
+      div{
+        width: 500px;
+        height: 300px;
+        margin: 30px auto;
+        position: relative;
+        background: url(images/bg-grid.jpg) no-repeat center center;
+        background-size: 100% 100%;
+      }
+      div img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left:-71px;
+        margin-top: -100px;
+        backface-visibility: visible;
+        transform: perspective(500px);
+      }
+      div img:nth-child(1){
+        opacity: .5;
+        z-index: 1;
+        transform: rotate3d(1,1,1,-10deg);
+      }
+      div img:nth-child(2){
+        opacity: .6;
+        z-index: 2;
+        transform: rotate3d(1,1,1,-25deg);
+      }
+      div img:nth-child(3){
+        opacity: .7;
+        z-index: 3;
+        transform: rotate3d(1,1,1,-35deg);
+      }
+      div img:nth-child(4){
+        opacity: .8;
+        z-index: 4;
+        transform: rotate3d(1,1,1,-45deg);
+      }
+      div img:nth-child(5){
+        z-index: 5;
+        transform: rotate3d(1,1,1,-60deg);
+      }
+      div:nth-of-type(1) img{
+        transform-origin: bottom center -40px;
+      }
+      div:nth-of-type(2) img{
+        transform-origin: top center 60px;
+      }
+  </style>
+</head>
+<body>
+  <div>
+    <img src="images/cardKingClub.png" alt="" width="142" height="200">
+    <img src="images/cardKingClub.png" alt="" width="142" height="200">
+    <img src="images/cardKingClub.png" alt="" width="142" height="200">
+    <img src="images/cardKingClub.png" alt="" width="142" height="200">
+    <img src="images/cardKingClub.png" alt="" width="142" height="200">
+  </div>
+  <div>
+    <img src="images/cardKingClub.png" alt="" width="142" height="200">
+    <img src="images/cardKingClub.png" alt="" width="142" height="200">
+    <img src="images/cardKingClub.png" alt="" width="142" height="200">
+    <img src="images/cardKingClub.png" alt="" width="142" height="200">
+    <img src="images/cardKingClub.png" alt="" width="142" height="200">
+  </div>
+</body>
+</html>
