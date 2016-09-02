@@ -12,6 +12,13 @@
  Weeks|Reading| Practice
 ---|---|---
 week1 | [**HTML&css**:Design and bulid websites](https://book.douban.com/subject/21338365/) chapter 1-13| 制作了含五个静态网页的“伪博客“”
-week2 | [**HTML&css**:Design and bulid websites](https://book.douban.com/subject/21338365/)  chapter 14-19<br>[**HTML5**: The missing Manual](https://book.douban.com/subject/26354468/)  chapter 1-4<br>[**CSS3**:The missing Manual](https://book.douban.com/subject/17458569/) chapter 1-8<br>[**Youtube:** HTML5 Tutorial ( by. *Derek Banas*) ](https://www.youtube.com/watch?v=CUxH_rWSI1k)| •配套书籍教程来学习CSS
-week3|[**CSS3**:The missing Manual](https://book.douban.com/subject/17458569/) chapter 9-17<br>[**CSS**:The Definitive Guide（3rd）](https://book.douban.com/subject/2308234/)chapter 1-10<br>[**Youtube:** CSS3 Tutorial & CSS Tricks ( by. *Derek Banas*) ](https://www.youtube.com/)<br>[**Youtube:** RWD ( by. *Derek Banas*) ](https://www.youtube.com/)|•配套书籍教程来学习CSS<br>•学习Flexbox布局
+week2 | [**HTML&css**:Design and bulid websites](https://book.douban.com/subject/21338365/)  chapter 14-19<br>[**HTML5**: The missing Manual](https://book.douban.com/subject/26354468/)  chapter 1-4<br>[**CSS3**:The missing Manual](https://book.douban.com/subject/17458569/) chapter 1-8<br>[**Youtube:** HTML5 Tutorial ( by. *Derek Banas*) ](https://www.youtube.com/watch?v=CUxH_rWSI1k)| • 配套书籍教程来学习CSS
+week3|[**CSS3**:The missing Manual](https://book.douban.com/subject/17458569/) chapter 9-17<br>[**CSS**:The Definitive Guide（3rd)](https://book.douban.com/subject/2308234/)  chapter 1-10<br>[**Youtube:** CSS3 Tutorial & CSS Tricks ( by. *Derek Banas*) ](https://www.youtube.com/)<br>[**Youtube:** RWD ( by. *Derek Banas*) ](https://www.youtube.com/)|• 配套书籍教程来学习CSS<br>• 学习Flexbox布局
+week4|[**CSS**:The Definitive Guide（3rd](https://book.douban.com/subject/2308234/) chapter 11-14|• 2D\3D transform<br>
+
+- JavaScript & jQuery  
+
+ Weeks|Reading| Practice
+ ---|---|---
+ week4|[**JavaScript and jQuery**: Interactive Front-end Web Development](https://book.douban.com/subject/20022383/) chapter 1-6<br>[**DOM Scripting**: Web design with JavaScript and the DOM (2nd)](https://book.douban.com/subject/5436113/)|•书中配套练习
 
