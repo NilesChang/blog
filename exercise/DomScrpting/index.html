@@ -5,26 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Image Gallery</title>
+  <script type="text/javascript" src="scripts/showPic.js"></script>
   <link rel="stylesheet" href="styles/layout.css" media="screen" />
 </head>
 <body>
   <h1>Snapshots</h1>
-  <ul>
+  <ul id="imagegallery">
     <li>
-      <a href="images/fireworks.jpg" title="A fireworks display" onclick="showPic(this); return false;">Fireworks</a>
+      <a href="images/fireworks.jpg" title="A fireworks display">
+        <img src="images/thumbnail_fireworks.jpg" alt="Fireworks" />
+      </a>
     </li>
     <li>
-      <a href="images/coffee.jpg" title="A cup of black coffee" onclick="showPic(this); return false;">Coffee</a>
+      <a href="images/coffee.jpg" title="A cup of black coffee">
+        <img src="images/thumbnail_coffee.jpg" alt="Coffee" />
+      </a>
     </li>
     <li>
-      <a href="images/rose.jpg" title="A red, red rose" onclick="showPic(this); return false;">Rose</a>
+      <a href="images/rose.jpg" title="A red, red rose">
+        <img src="images/thumbnail_rose.jpg" alt="Rose" />
+      </a>
     </li>
     <li>
-      <a href="images/bigben.jpg" title="The famous clock" onclick="showPic(this); return false;">Big Ben</a>
+      <a href="images/bigben.jpg" title="The famous clock">
+        <img src="images/thumbnail_bigben.jpg" alt="Big Ben" />
+      </a>
     </li>
   </ul>
   <img id="placeholder" src="images/placeholder.gif" alt="my image gallery" />
   <p id="description">Choose an image.</p>
-  <script type="text/javascript" src="scripts/showPic.js"></script>
 </body>
 </html>

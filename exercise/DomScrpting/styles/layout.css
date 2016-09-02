@@ -17,6 +17,7 @@ a {
 }
 ul {
   padding: 0;
+  list-style: none;
 }
 li {
   float: left;
@@ -29,4 +30,13 @@ img {
   border: 3px solid #ccc;
   border-radius: 10px;
   box-shadow: 3px 3px 2px #ccc;
+}
+#imagegallery {
+  list-style: none;
+}
+#imagegallery li{
+  display: inline;
+}
+#imagegallery li a img{
+  border: 0;
 }
