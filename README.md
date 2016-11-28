@@ -31,4 +31,5 @@ week10-11|[**CSS Mastery**: Advanced Web Standards Solutions (3rd)](http://www.a
  week7|[Eloquent **JavaScript** (2nd)](http://eloquentjavascript.net/) chapter 5|•书中配套练习
  week8-10|[Eloquent **JavaScript** (2nd)](http://eloquentjavascript.net/) chapter 6|•书中配套练习
  week11|[Professional JavaScript for Web Developers (3rd)](https://book.douban.com/subject/10546125/) chapter 1-4|null 
+ week12-15|[Eloquent **JavaScript** (2nd)](http://eloquentjavascript.net/) chapter 7-9<br/>[Professional JavaScript for Web Developers (3rd)](https://book.douban.com/subject/10546125/) chapter 5-6|•书中配套练习
 
