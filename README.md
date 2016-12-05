@@ -19,7 +19,7 @@ week5|[**HTML5**: The missing Manual](https://book.douban.com/subject/26354468/)
 week6|[**CSS Mastery**: Advanced Web Standards Solutions (3rd)](http://www.apress.com/9781430258636)  chapter 9<br>[**Mobile First**](https://book.douban.com/subject/6892334/)|•[**One Month Responsive Design**](https://onemonth.com/courses/responsive-design/curriculum)  Project 1 <br>•[A smarter way to learn **HTML&CSS**](http://www.asmarterwaytolearn.com/htmlcss/index-of-exercises.html) exercise 3-9
 week7-9|[**CSS Mastery**: Advanced Web Standards Solutions (3rd)](http://www.apress.com/9781430258636)  chapter 10<br>[**Mobile First**](https://book.douban.com/subject/6892334/)|•[**One Month Responsive Design**](https://onemonth.com/courses/responsive-design/curriculum)<br>•[A smarter way to learn **HTML&CSS**](http://www.asmarterwaytolearn.com/htmlcss/index-of-exercises.html) exercise 10-14
 week10-11|[**CSS Mastery**: Advanced Web Standards Solutions (3rd)](http://www.apress.com/9781430258636)  chapter 11<br>|•[A smarter way to learn **HTML&CSS**](http://www.asmarterwaytolearn.com/htmlcss/index-of-exercises.html) exercise 15-32
-
+week12-15||•[A smarter way to learn **HTML&CSS**](http://www.asmarterwaytolearn.com/htmlcss/index-of-exercises.html) exercise 33-68
 
 - JavaScript & jQuery  
 
@@ -32,4 +32,5 @@ week10-11|[**CSS Mastery**: Advanced Web Standards Solutions (3rd)](http://www.a
  week8-10|[Eloquent **JavaScript** (2nd)](http://eloquentjavascript.net/) chapter 6|•书中配套练习
  week11|[Professional JavaScript for Web Developers (3rd)](https://book.douban.com/subject/10546125/) chapter 1-4|null 
  week12-15|[Eloquent **JavaScript** (2nd)](http://eloquentjavascript.net/) chapter 7-9<br/>[Professional JavaScript for Web Developers (3rd)](https://book.douban.com/subject/10546125/) chapter 5-6|•书中配套练习
+ week16|[Eloquent **JavaScript** (2nd)](http://eloquentjavascript.net/) chapter 10-11|•书中配套练习
 
